@@ -1,0 +1,1 @@
+<?php namespace Ns\Declare;
