@@ -1,0 +1,15 @@
+{
+    "name": "emacs-php/php7-el",
+    "description": "Emacs major mode for editing PHP7",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "USAMI Kenta",
+            "email": "tadsan@zonu.me"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    }
+}
