@@ -104,5 +104,15 @@
     "mcrypt_module_self_test"
     "mdecrypt_generic"))
 
+(defconst php7-magic-constants
+  '("__LINE__"
+    "__FILE__"
+    "__DIR__"
+    "__FUNCTION__"
+    "__CLASS__"
+    "__TRAIT__"
+    "__METHOD__"
+    "__NAMESPACE__"))
+
 (provide 'php7)
 ;;; php7.el ends here
