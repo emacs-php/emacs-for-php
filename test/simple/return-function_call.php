@@ -1,1 +1,1 @@
-<?php return fopen('php://output');
+<?php return fopen('php://output', 'r');

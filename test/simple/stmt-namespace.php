@@ -1,1 +1,1 @@
-<?php namespace Ns\Declare;
+<?php namespace Ns\Declares\Foo;
