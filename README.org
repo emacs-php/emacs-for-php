@@ -1,1 +1,25 @@
-* Emacs major mode for editing PHP7
+* Emacs for PHP
+** Major mode
+*** [BEST] php-mode
+#+BEGIN_HTML
+<a href="http://melpa.org/#/php-mode"><img alt="MELPA: php-mode" src="http://melpa.org/packages/php-mode-badge.svg"></a>
+<a href="http://stable.melpa.org/#/php-mode"><img alt="MELPA stable: php-mode" src="http://stable.melpa.org/packages/php-mode-badge.svg"></a>
+#+END_HTML
+*PHP Mode* is a major mode for editing PHP script.
+- *MELPA*: http://melpa.org/#/php-mode
+*** [HTML] web-mode
+*web-mode* is an autonomous emacs major mode for editing HTML and web templates.  This mode supports [[https://www.smarty.net/][Smarty]], [[https://twig.symfony.com/][Twig]], [[https://laravel.com/docs/5.5/blade][Blade]], and many other template languages.
+#+BEGIN_HTML
+<a href="http://melpa.org/#/web-mode"><img alt="MELPA: web-mode" src="http://melpa.org/packages/web-mode-badge.svg"></a>
+<a href="http://stable.melpa.org/#/web-mode"><img alt="MELPA stable: web-mode" src="http://stable.melpa.org/packages/web-mode-badge.svg"></a>
+#+END_HTML
+- *Website*: http://web-mode.org/
+- *MELPA*: http://melpa.org/#/web-mode
+*** js-mode
+Although js-mode is *NOT* a mode for PHP editing, this mode is included in Emacs, so it is useful in environments where additional packages can not be installed.
+
+For example if you are a server engineer, for example if you are logging into a customer's server and reading the code.
+#+BEGIN_SRC emacs-lisp
+(unless (or (featurep 'php-mode) (featurep 'php7-mode))
+  (add-to-list 'auto-mode-alist '("\\.php\\'" . js-mode)))
+#+END_SRC
